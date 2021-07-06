@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/f870c7346d.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="game-container">
+      <header><h1>Rock/Paper/Scissors</h1></header>
+      <div class="button-container">
+        <button type="button x " class="button" id="rock">
+          <i class="far fa-hand-rock fa-5x" id="rock" aria-hidden="true"></i>
+        </button>
+
+        <button class="button x" id="paper">
+          <i class="far fa-hand-paper fa-5x" id="paper" aria-hidden="true"></i>
+        </button>
+
+        <button class="button x" id="scissors">
+          <i
+            class="far fa-hand-scissors fa-5x"
+            id="scissors"
+            aria-hidden="true"
+          ></i>
+        </button>
+      </div>
+      <div class="score">
+        <span id="player">Player: </span>
+        <span id="user-score">0</span>
+        <span id="computer-score">0</span>
+        <span id="computer">Computer:</span>
+      </div>
+      <div id="winner-text"></div>
+      <div id="play-again"></div>
+    </div>
+  </body>
+</html>

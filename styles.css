@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-size: 16px;
+  font-family: "Otomanopee One";
+}
+
+.game-container {
+  width: 800px;
+  height: 100px;
+
+  color: #3f292b;
+  margin: 0 auto;
+  text-align: center;
+}
+header {
+  background-color: #db7f67;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+.button-container {
+  display: flex;
+  width: 100%;
+  margin-top: 5em;
+}
+
+.button {
+  flex: 1;
+  border: 2px solid #3f292b;
+  border-radius: 5em;
+  margin: 0 2%;
+  box-shadow: 0 9px #3f292b;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: #dbbea1;
+}
+
+.score {
+  margin-top: 2em;
+  font-size: 2em;
+}
+.score:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#user-score {
+  float: left;
+}
+#computer-score {
+  float: right;
+}
+#player {
+  float: left;
+}
+#computer {
+  float: right;
+}
+
+.winner {
+  font-size: 3em;
+}
+#winner-text {
+  font-size: 3em;
+  color: #d34f73;
+  background-color: #3f292b;
+}
+
+.buttonstyle {
+  font-size: 2em;
+  background-color: #dbbea1;
+  color: #3f292b;
+  box-shadow: 0 9px;
+  cursor: pointer;
+}
+
+.buttonstyle:active,
+button:active {
+  box-shadow: 0 5px;
+  transform: translateY(4px);
+}
+
+.green {
+  background-color: #60d394;
+}
+.red {
+  background-color: #ee6055;
+}
