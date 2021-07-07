@@ -101,3 +101,11 @@ button:active {
 .col-red {
   color: #ee6055;
 }
+
+.anim-container {
+  display: flex;
+}
+
+.anim {
+  flex: 1;
+}

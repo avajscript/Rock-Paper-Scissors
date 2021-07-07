@@ -57,6 +57,23 @@ window.addEventListener("DOMContentLoaded", (event) => {
     }
   }
 
+  function animate(user, computer) {
+    const userAnim = document.createElement("i");
+    const computerAnim = document.createElement("i");
+
+    const userOutput = document.getElementById("anim-user");
+    const computerOutput = document.getElementById("anim-computer");
+
+    userOutput.removeChild(userOutput.childNodes[0]);
+    computerOutput.removeChild(computerOutput.childNodes[0]);
+
+    userAnim.classList.add("far", `fa-hand-${user}`, "fa-5x", "green");
+    computerAnim.classList.add("far", `fa-hand-${computer}`, "fa-5x", "red");
+
+    userOutput.appendChild(userAnim);
+    computerOutput.appendChild(computerAnim);
+  }
+
   function outputScore(winState) {
     // Increases player scores and outputs to the screen
     const user = document.getElementById("user-score");
@@ -106,6 +123,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
         ? "tie"
         : "Error";
     gamesPlayed++;
+    animate(userChoice, computerMove);
     outputScore(result);
   }
 
